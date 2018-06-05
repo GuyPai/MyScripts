@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 import boto.ec2
 
-auth = {"aws_access_key_id": "AKIAJLRTCVTKOUGYIQDA",
-        "aws_secret_access_key": "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"}
+
+aws_access_key_id = raw_input = ("Please enter the aws_access_key_id: ")
+aws_secret_access_key = raw_input = ("Please enter the aws_access_key_id: ")
+
+auth = {"aws_access_key_id": aws_access_key_id,
+        "aws_secret_access_key": aws_secret_access_key}
 
 ec2 = boto.ec2.connect_to_region("eu-west-2", **auth)
 
